@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kaw.s1" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ust_logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+                <activity
+                android:name=".index"
+                android:label="UST Freshmen Guide" >
+                <intent-filter>
+                    <action android:name="android.intent.action.MAIN" />
+                    <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>
+                </activity>
+
+                <activity
+                android:name=".map"
+                android:label="Map of UST"
+                android:parentActivityName="com.example.kaw.s1.index" >
+                <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.example.s1.index" />
+                </activity>
+
+        <activity
+            android:name=".foods"
+            android:label="Foods around UST"
+            android:parentActivityName="com.example.kaw.s1.index" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.s1.index" />
+        </activity>
+
+        <activity
+            android:name=".other"
+            android:label="Others"
+            android:parentActivityName="com.example.kaw.s1.index" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.s1.index" />
+        </activity>
+
+        <activity
+            android:name=".hymn"
+            android:label="UST Hymn"
+            android:parentActivityName="com.example.kaw.s1.index" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.s1.index" />
+        </activity>
+
+        <activity
+            android:name=".cheer"
+            android:label="UST Cheer"
+            android:parentActivityName="com.example.kaw.s1.index" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.s1.index" />
+        </activity>
+        <activity
+            android:name=".prayer"
+            android:label="Prayer"
+            android:parentActivityName="com.example.kaw.s1.index" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.s1.index" />
+        </activity>
+
+
+    </application>
+
+    </manifest>

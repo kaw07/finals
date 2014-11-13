@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.kaw.s1.other"
+    android:background="#ff080808"
+    android:clickable="true">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:background="@drawable/ust"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:cropToPadding="false"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prayer"
+        android:id="@+id/prayer"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="7dp"
+        android:clickable="true"
+        android:minWidth="200dp"
+        android:textAlignment="center"
+        android:textColor="#ff000000"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:minHeight="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UST Hymn"
+        android:id="@+id/hymn"
+        android:layout_below="@+id/imageView"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        android:minWidth="200dp"
+        android:textAlignment="center"
+        android:textColor="#ff000000"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:minHeight="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UST Cheer"
+        android:id="@+id/cheer"
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="7dp"
+        android:minWidth="200dp"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="#ff000000"
+        android:textAlignment="center"
+        android:minHeight="10dp" />
+
+</LinearLayout>
